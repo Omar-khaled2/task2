@@ -56,6 +56,37 @@ section{
     font-size: 70px;
     color: #ff305b;
 }
+.kalam p::after{
+    content: '';
+    animation: alternate 1s infinite typing;
+}
+@keyframes typing{
+    10%{
+        content: '|';
+    }
+    15%{
+        content: ' D|';
+    }
+    20%{
+        content: ' De|';
+    }
+    25%{
+        content: ' Des|';
+    }
+    40%{
+        content: ' Desi|';
+    }
+    65%{
+        content: ' Design|';
+    }
+    85%{
+        content: ' Designe|';
+    }
+    100%{
+        content: ' Designer|';
+    }
+
+}
 .sec{
     width: 30%;
     margin: 20px;
@@ -64,8 +95,9 @@ section{
 }
 .sec img{
     width: 100%;
-    border-left: 5px solid;
-    border-top: 5px solid;
+    box-shadow:#ff305b -5px 8px;
+    /* border-left: 5px solid;
+    border-top: 5px solid; */
 }
 .overlay{
     background-color: rgba(110, 172, 222, 0.511);
@@ -148,5 +180,37 @@ hr{
 .buttom{
     position: absolute;
     margin-top: 620px;
-    margin-left: 490px;
+    margin-left: 550px;
+}
+.buttom a:hover{
+    background-color: red;
+}
+.title {
+    text-align: center;
+    padding-top: 50px;
+    padding-top: 160px;
+}
+
+.title h1 {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.services-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 50px 100px;
+    background-color: #f2f2f2;
+}
+
+.service-item {
+    text-align: center;
+    width: 20%;
+    margin: 20px;
+}
+
+.service-item img {
+    width: 50px;
+    margin-bottom: 20px;
 }
